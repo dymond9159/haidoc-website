@@ -3,14 +3,14 @@
   "description": "HaiDoc Website, Next15, Typescript, shadcn UI",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev-turbo": "next dev --turbopack",
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start -p 3000",
     "lint": "next lint",
-    "add-ui": "npx shadcn@latest add"
+    "add-ui": "npx shadcn@latest add",
+    "pm2": "pm2 start ecosystem.config.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
