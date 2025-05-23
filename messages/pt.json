@@ -1,0 +1,147 @@
+{
+  "common": {
+    "loading": "Carregando..."
+  },
+  "home": {
+    "heroTitle": "Cuidados de saúde simplificados para todos",
+    "heroDescription": "HaiDoc conecta você aos melhores profissionais de saúde, facilitando o agendamento de consultas e o acompanhamento do seu bem-estar.",
+    "whyChoose": "Por que escolher HaiDoc?",
+    "whyChooseDescription": "Nossa plataforma oferece uma experiência completa para pacientes e profissionais de saúde.",
+    "readyToStart": "Pronto para começar?",
+    "joinThousands": "Junte-se a milhares de usuários que já estão aproveitando os benefícios da HaiDoc.",
+    "features": {
+      "onlineConsultationsTitle": "Consultas Online",
+      "onlineConsultationsDesc": "Agende e realize consultas médicas diretamente do conforto da sua casa.",
+      "qualifiedProfessionalsTitle": "Profissionais Qualificados",
+      "qualifiedProfessionalsDesc": "Acesso a uma rede de médicos e especialistas altamente qualificados.",
+      "digitalRecordsTitle": "Prontuário Digital",
+      "digitalRecordsDesc": "Mantenha seu histórico médico organizado e acessível a qualquer momento.",
+      "digitalPrescriptionsTitle": "Receitas Digitais",
+      "digitalPrescriptionsDesc": "Receba suas prescrições médicas digitalmente, sem complicações.",
+      "medicationRemindersTitle": "Lembretes de Medicação",
+      "medicationRemindersDesc": "Nunca mais esqueça de tomar seus medicamentos com nossos lembretes.",
+      "examResultsTitle": "Resultados de Exames",
+      "examResultsDesc": "Visualize e compartilhe seus resultados de exames com seus médicos."
+    }
+  },
+  "header": {
+    "navMenu": {
+      "home": "Início",
+      "pricing": "Planos",
+      "contact": "Contato",
+      "about": "Sobre"
+    },
+    "cta": {
+      "login": "Login",
+      "register": "Cadastro"
+    }
+  },
+  "footer": {
+    "description": "Fornecendo serviços de saúde de alta qualidade e soluções para pacientes e profissionais de saúde.",
+    "contactUs": "Contate-nos",
+    "contactUsAt": "Contate-nos em:",
+    "allRightsReserved": "Todos os direitos reservados.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço",
+    "cookiePolicy": "Política de Cookies",
+    "legal": "Legal",
+    "quickLinks": "Links Rápidos"
+  },
+  "pricing": {
+    "pageTitle": "Conheça Nossos Planos",
+    "pageDescription": "Explore soluções personalizadas para otimizar seus serviços e impulsionar seus negócios.",
+    "featured": "EM DESTAQUE",
+    "free": "GRATUITO",
+    "business": {
+      "title": "HaiDoc Business",
+      "price": "GRATUITO",
+      "features": [
+        "Conta gratuita",
+        "Saque de fundos mensal após dedução de taxas",
+        "Acesso a serviços de business na plataforma",
+        "Ferramentas básicas de gerenciamento de agendamentos (consultas, marcações, etc.)"
+      ]
+    },
+    "businessPlus": {
+      "title": "HaiDoc Business Plus",
+      "price": "1.499",
+      "currency": "MZN",
+      "period": "Mês",
+      "features": [
+        "Todos os benefícios do plano HaiDoc Business +",
+        "Saque de fundos quinzenalmente após dedução de taxas",
+        "Gerenciamento de agenda personalizada para o seu negócio (consultas, marcações, etc.)",
+        "Análises de desempenho e relatórios personalizados",
+        "Destaque do provedor de saúde para todos os pacientes",
+        "Inclusão na lista de Serviços Recomendados da Plataforma aos pacientes",
+        "Acesso a uma linha de apoio ao cliente 24/7"
+      ]
+    },
+    "company": {
+      "title": "HaiDoc Company",
+      "price": "90",
+      "currency": "MZN",
+      "period": "Mês",
+      "features": [
+        "Todos os benefícios do plano HaiDoc Business Plus +",
+        "Saque de fundos semanalmente após dedução de taxas",
+        "Acesso simultâneo a todos os serviços (Farmácia, Laboratório, Clínica e Profissional de Saúde)",
+        "Consultoria para otimização de operações e serviços",
+        "Suporte prioritário 24/7",
+        "Participação em eventos de networking e treinamentos personalizados"
+      ]
+    }
+  },
+  "cta": {
+    "startNow": "Começar agora",
+    "createAccount": "Criar uma conta",
+    "loginHero": "Fazer login",
+    "login": "Login",
+    "register": "Cadastro",
+    "send": "Enviar",
+    "next": "Próximo",
+    "access": "Acessar",
+    "enter": "Entrar",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "continue": "Continuar"
+  },
+  "about": {
+    "pageTitle": "Sobre a HaiDoc",
+    "pageDescription": "Saiba mais sobre nossa missão, visão e a equipe por trás da HaiDoc.",
+    "missionTitle": "Nossa Missão",
+    "missionDesc": "Tornar o acesso à saúde de qualidade simples e acessível para todos, em qualquer lugar.",
+    "visionTitle": "Nossa Visão",
+    "visionDesc": "Ser a principal plataforma digital de saúde, conectando pacientes e profissionais com confiança e inovação.",
+    "valuesTitle": "Nossos Valores",
+    "values": [
+      "Cuidado centrado no paciente",
+      "Inovação e tecnologia",
+      "Confiança e transparência",
+      "Acessibilidade para todos",
+      "Melhoria contínua"
+    ],
+    "teamTitle": "Conheça Nossa Equipe",
+    "teamDesc": "A HaiDoc é construída por uma equipe apaixonada de profissionais de saúde, tecnólogos e inovadores dedicados a melhorar vidas.",
+    "contactCta": "Quer falar conosco? Visite nossa página de Contato."
+  },
+  "contact": {
+    "pageTitle": "Fale Conosco",
+    "pageDescription": "Adoraríamos ouvir você! Entre em contato para suporte, feedback ou oportunidades de parceria.",
+    "form": {
+      "name": "Seu Nome",
+      "email": "Seu Email",
+      "message": "Sua Mensagem",
+      "submit": "Enviar Mensagem",
+      "success": "Obrigado por entrar em contato! Em breve retornaremos.",
+      "error": "Algo deu errado. Por favor, tente novamente."
+    },
+    "infoTitle": "Informações de Contato",
+    "email": "Email",
+    "phone": "Telefone",
+    "address": "Endereço",
+    "emailValue": "info@hai-doc.com",
+    "phoneValue": "+258 123 456 789",
+    "addressValue": "Rua do Dão, nº49, 2º Andar, Bairro Central, Cidade de Maputo, Moçambique"
+  }
+}
