@@ -1,4 +1,4 @@
-import { PlanType } from "@/types"
+import { PlanType, PlanTypeForPatient } from "@/types"
 
 export const ThemeColor = {
   system: [
@@ -53,42 +53,102 @@ export const ThemeColor = {
   rating: ["", "#FCF9F3", "#F8EBD1", "#E9D4A9", "#F5BD4C", "#936200", "#483716"],
 }
 
-export const PlanList = [
+export const PlanListForProvider = [
   {
     type: PlanType.Business,
-    titleKey: "business.title",
-    priceKey: "business.price",
-    featuresKeys: ["business.features.0", "business.features.1", "business.features.2", "business.features.3"],
+    titleKey: "provider.business.title",
+    priceKey: "provider.business.price",
+    ctaKey: "provider.business.cta",
+    featuresKeys: [
+      "provider.business.features.0",
+      "provider.business.features.1",
+      "provider.business.features.2",
+      "provider.business.features.3",
+    ],
   },
   {
     type: PlanType.BusinessPlus,
-    titleKey: "businessPlus.title",
-    priceKey: "businessPlus.price",
+    titleKey: "provider.businessPlus.title",
+    featured: "provider.businessPlus.featured",
+    priceKey: "provider.businessPlus.price",
     featuresKeys: [
-      "businessPlus.features.0",
-      "businessPlus.features.1",
-      "businessPlus.features.2",
-      "businessPlus.features.3",
-      "businessPlus.features.4",
-      "businessPlus.features.5",
-      "businessPlus.features.6",
+      "provider.businessPlus.features.0",
+      "provider.businessPlus.features.1",
+      "provider.businessPlus.features.2",
+      "provider.businessPlus.features.3",
+      "provider.businessPlus.features.4",
+      "provider.businessPlus.features.5",
+      "provider.businessPlus.features.6",
     ],
-    currency: "businessPlus.currency",
-    period: "businessPlus.period",
+    ctaKey: "provider.businessPlus.cta",
+    currency: "provider.businessPlus.currency",
+    period: "provider.businessPlus.period",
   },
   {
     type: PlanType.Company,
-    titleKey: "company.title",
-    priceKey: "company.price",
+    titleKey: "provider.company.title",
+    featured: "provider.company.featured",
+    priceKey: "provider.company.price",
     featuresKeys: [
-      "company.features.0",
-      "company.features.1",
-      "company.features.2",
-      "company.features.3",
-      "company.features.4",
-      "company.features.5",
+      "provider.company.features.0",
+      "provider.company.features.1",
+      "provider.company.features.2",
+      "provider.company.features.3",
+      "provider.company.features.4",
+      "provider.company.features.5",
     ],
-    currency: "company.currency",
-    period: "company.period",
+    ctaKey: "provider.company.cta",
+    currency: "provider.company.currency",
+    period: "provider.company.period",
+  },
+]
+
+export const PlanListForPatient = [
+  {
+    type: PlanTypeForPatient.Individual,
+    titleKey: "patient.individual.title",
+    priceKey: "patient.individual.price",
+    featuresKeys: [
+      "patient.individual.features.0",
+      "patient.individual.features.1",
+      "patient.individual.features.2",
+      "patient.individual.features.3",
+      "patient.individual.features.4",
+    ],
+    ctaKey: "patient.individual.cta",
+  },
+  {
+    type: PlanTypeForPatient.Patient,
+    titleKey: "patient.patient.title",
+    priceKey: "patient.patient.price",
+    featuresKeys: [
+      "patient.patient.features.0",
+      "patient.patient.features.1",
+      "patient.patient.features.2",
+      "patient.patient.features.3",
+      "freeServices",
+      "patient.patient.features.4",
+      "patient.patient.features.5",
+      "patient.patient.features.6",
+      "patient.patient.features.7",
+      "patient.patient.features.8",
+    ],
+    ctaKey: "patient.patient.cta",
+    currency: "patient.patient.currency",
+    period: "patient.patient.period",
+  },
+  {
+    type: PlanTypeForPatient.Family,
+    titleKey: "patient.family.title",
+    priceKey: "patient.family.price",
+    featuresKeys: [
+      "patient.family.features.0",
+      "patient.family.features.1",
+      "patient.family.features.2",
+      "patient.family.features.3",
+    ],
+    ctaKey: "patient.family.cta",
+    currency: "patient.family.currency",
+    period: "patient.family.period",
   },
 ]

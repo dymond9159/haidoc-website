@@ -1,12 +1,13 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { routes } from "@/lib/router"
+import { useRoutes } from "@/hooks/use-localized-routes"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
 
 export default function AboutPage() {
   const t = useTranslations("about")
+  const routes = useRoutes()
   return (
     <div className="flex flex-col gap-16 py-12">
       <section className="container mx-auto px-6 md:px-12 text-center">

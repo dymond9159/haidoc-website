@@ -28,7 +28,7 @@ function TabsList({
   ...props
 }: React.ComponentProps<typeof TabsPrimitive.List> & {
   orientation?: "horizontal" | "vertical"
-  variant?: "default" | "button" | "card"
+  variant?: "default" | "button" | "card" | "rounded"
 }) {
   return (
     <TabsPrimitive.List
@@ -39,6 +39,7 @@ function TabsList({
         variant === "default" && "flex-row gap-4",
         variant === "button" && "flex-row gap-4",
         variant === "card" && "border bg-white p-3 md:p-6",
+        variant === "rounded" && "rounded-full flex-row gap-2 p-2",
         className,
       )}
       {...props}
@@ -47,7 +48,7 @@ function TabsList({
 }
 
 interface TabTriggerProps extends React.ComponentProps<typeof TabsPrimitive.Trigger> {
-  variant?: "default" | "button" | "border"
+  variant?: "default" | "button" | "border" | "rounded"
   size?: "default" | "sm" | "lg" | "xl"
 }
 
@@ -61,6 +62,7 @@ const tabTriggerVariants = cva(
           "flex border border-system-5 justify-start bg-background hover:text-secondary hover:border-secondary data-[state=active]:text-secondary data-[state=active]:border-secondary",
         border:
           "border-t-0 border-r-0 border-l-0 border-b-2 border-system-5 rounded-none hover:text-secondary hover:border-secondary data-[state=active]:text-secondary data-[state=active]:border-secondary",
+        rounded: "flex flex-row items-center justify-center rounded-full bg-secondary-2",
       },
       size: {
         default: "h-fit px-4 py-2 has-[>svg]:px-3",
@@ -86,7 +88,8 @@ function TabsTrigger({ className, variant = "default", size = "default", ...prop
     <TabsPrimitive.Trigger
       data-slot="tabs-trigger"
       className={cn(
-        "data-[state=active]:bg-secondary-3 data-[state=active]:text-secondary focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 cursor-pointer",
+        "data-[state=active]:bg-secondary-3 data-[state=active]:text-secondary focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4 cursor-pointer transform-all duration-200",
+        variant === "rounded" && "data-[state=active]:bg-secondary data-[state=active]:text-white",
         tabTriggerVariants({ variant, size }),
         className,
       )}

@@ -17,13 +17,13 @@ export function LegalLayout({ title, lastUpdated, children }: LegalLayoutProps) 
         <div className="prose prose-blue max-w-none">{children}</div>
 
         <div className="mt-8 pt-6 border-t flex flex-col sm:flex-row gap-4 text-sm">
-          <Link href="/privacy-policy" className="text-primary hover:underline">
+          <Link href="/legal/privacy-policy" className="text-primary hover:underline">
             Privacy Policy
           </Link>
-          <Link href="/terms-of-service" className="text-primary hover:underline">
+          <Link href="/legal/terms-of-service" className="text-primary hover:underline">
             Terms of Service
           </Link>
-          <Link href="/cookie-policy" className="text-primary hover:underline">
+          <Link href="/legal/cookie-policy" className="text-primary hover:underline">
             Cookie Policy
           </Link>
         </div>

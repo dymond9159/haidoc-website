@@ -1,11 +1,22 @@
+"use client"
+
 import { Icon } from "@/components/icons"
 import { Button } from "@/components/ui/button"
-import { routes } from "@/lib/router"
+import Slider from "@/components/ui/Slider"
+import { useRoutes } from "@/hooks/use-localized-routes"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
 
+const images = [
+  "/images/slider/telemedicine_1.webp",
+  "/images/slider/telemedicine_2.webp",
+  "/images/slider/telemedicine_3.webp",
+  "/images/slider/telemedicine_4.webp",
+]
+
 export default function LandingPage() {
   const t = useTranslations()
+  const routes = useRoutes()
 
   const features = [
     {
@@ -43,38 +54,33 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-system-1 to-system-3 py-20">
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                  {t("home.heroTitle")}
-                </h1>
-                <p className="max-w-[600px] text-system-11 md:text-xl">{t("home.heroDescription")}</p>
-              </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link href={routes.register()}>
-                  <Button size="lg" className="bg-primary-9 hover:bg-primary-10">
-                    {t("cta.startNow")}
-                  </Button>
-                </Link>
-                <Link href={routes.login()}>
-                  <Button size="lg" variant="outline">
-                    {t("cta.login")}
-                  </Button>
-                </Link>
-              </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="relative h-[350px] w-[350px] rounded-full bg-primary-2 p-4">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Icon name="doctor" className="h-40 w-40 text-primary-9" />
+      <section className="relative p-0">
+        <Slider images={images}>
+          <div className="h-full container mx-auto px-6 md:px-12 relative z-10 flex items-center justify-center">
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 -mt-15">
+              <div className="flex flex-col justify-center space-y-12">
+                <div className="space-y-8">
+                  <h1 className="text-3xl text-white text-shadow-md font-bold sm:text-4xl md:text-5xl lg:text-6xl">
+                    {t("home.heroTitle")}
+                  </h1>
+                  <p className="max-w-[600px] text-white md:text-xl">{t("home.heroDescription")}</p>
+                </div>
+                <div className="flex flex-col gap-4 min-[400px]:flex-row">
+                  <Link href={routes.register()}>
+                    <Button size="lg" className="bg-primary-9 hover:bg-primary-10">
+                      {t("cta.startNow")}
+                    </Button>
+                  </Link>
+                  <Link href={routes.login()}>
+                    <Button size="lg" variant="outline">
+                      {t("cta.login")}
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </Slider>
       </section>
 
       {/* Features Section */}

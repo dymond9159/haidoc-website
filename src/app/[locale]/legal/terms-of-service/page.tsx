@@ -1,4 +1,5 @@
 import TOSSection from "@/components/tos-section"
+import config from "@/config"
 import type { Metadata } from "next"
 import Link from "next/link"
 
@@ -272,16 +273,21 @@ export default function TermsOfServicePage() {
         <div className="space-y-1">
           <p>
             <strong className="font-medium text-gray-800">Email:</strong>{" "}
-            <Link href="mailto:legal@hai-doc.com" className="text-blue-600 hover:underline">
-              legal@hai-doc.com
+            <Link href={`mailto:${config.supportEmail}`} className="text-secondary hover:underline">
+              {config.supportEmail}
             </Link>
           </p>
           <p>
-            <strong className="font-medium text-gray-800">Phone:</strong> +258 123 456 789
+            <strong className="font-medium text-gray-800">Phone:</strong>{" "}
+            <a href={`tel:${config.phone}`} className="text-secondary hover:underline">
+              {config.phone}
+            </a>
           </p>
           <p>
-            <strong className="font-medium text-gray-800">Address:</strong> Rua do Dão, nº49, 2º Andar, Bairro Central,
-            Cidade de Maputo, Moçambique
+            <strong className="font-medium text-gray-800">Address:</strong>{" "}
+            <a href={`https://maps.google.com/?q=${config.address}`} className="text-secondary hover:underline">
+              {config.address}
+            </a>
           </p>
         </div>
       </TOSSection>

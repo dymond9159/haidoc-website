@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { routes } from "@/lib/router"
+import { useRoutes } from "@/hooks/use-localized-routes"
 import { cn } from "@/lib/utils"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
@@ -17,6 +17,7 @@ interface NavItem {
 
 export function Header() {
   const t = useTranslations("header")
+  const routes = useRoutes()
 
   const router = useRouter()
   const isMobile = useMobile()

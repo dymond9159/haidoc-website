@@ -4,22 +4,22 @@
   },
   "home": {
     "heroTitle": "Simplified healthcare for everyone",
-    "heroDescription": "HaiDoc connects you with top healthcare professionals, making it easy to book appointments and track your well-being.",
+    "heroDescription": "HaiDoc connects you with top healthcare professionals, making it easy to schedule appointments and track your well-being.",
     "whyChoose": "Why choose HaiDoc?",
-    "whyChooseDescription": "Our platform offers a complete experience for patients and healthcare professionals.",
+    "whyChooseDescription": "Our platform offers a complete experience for both patients and healthcare professionals.",
     "readyToStart": "Ready to get started?",
     "joinThousands": "Join thousands of users already enjoying the benefits of HaiDoc.",
     "features": {
       "onlineConsultationsTitle": "Online Consultations",
-      "onlineConsultationsDesc": "Book and attend medical appointments from the comfort of your home.",
+      "onlineConsultationsDesc": "Schedule and attend medical consultations from the comfort of your home.",
       "qualifiedProfessionalsTitle": "Qualified Professionals",
       "qualifiedProfessionalsDesc": "Access a network of highly qualified doctors and specialists.",
-      "digitalRecordsTitle": "Digital Medical Records",
-      "digitalRecordsDesc": "Keep your medical history organized and accessible at any time.",
+      "digitalRecordsTitle": "Digital Records",
+      "digitalRecordsDesc": "Keep your medical history organized and accessible anytime.",
       "digitalPrescriptionsTitle": "Digital Prescriptions",
       "digitalPrescriptionsDesc": "Receive your medical prescriptions digitally, hassle-free.",
       "medicationRemindersTitle": "Medication Reminders",
-      "medicationRemindersDesc": "Never forget to take your meds with our smart reminders.",
+      "medicationRemindersDesc": "Never forget to take your medication with our reminders.",
       "examResultsTitle": "Exam Results",
       "examResultsDesc": "View and share your exam results with your doctors."
     }
@@ -33,71 +33,130 @@
     },
     "cta": {
       "login": "Login",
-      "register": "Register"
+      "register": "Sign Up"
     }
   },
   "footer": {
-    "description": "Delivering high-quality healthcare services and solutions for patients and providers.",
-    "contactUs": "Contact us",
+    "description": "Providing high-quality healthcare services and solutions for patients and professionals.",
+    "contactUs": "Contact Us",
     "contactUsAt": "Contact us at:",
     "allRightsReserved": "All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "legal": "Legal",
-    "quickLinks": "Quick Links"
+    "quickLinks": "Quick Links",
+    "phone": "Phone",
+    "address": "Address"
   },
   "pricing": {
-    "pageTitle": "Explore Our Plans",
-    "pageDescription": "Discover tailored solutions to optimize your services and grow your business.",
-    "featured": "FEATURED",
-    "free": "FREE",
-    "business": {
-      "title": "HaiDoc Business",
-      "price": "FREE",
-      "features": [
-        "Free account",
-        "Monthly fund withdrawals after fees",
-        "Access to business services on the platform",
-        "Basic scheduling management tools (appointments, bookings, etc.)"
-      ]
+    "tabs": {
+      "provider": "Healthcare Professional",
+      "patient": "Patient"
     },
-    "businessPlus": {
-      "title": "HaiDoc Business Plus",
-      "price": "1,499",
-      "currency": "MZN",
-      "period": "Month",
-      "features": [
-        "All benefits of HaiDoc Business +",
-        "Biweekly fund withdrawals after fees",
-        "Custom schedule management for your business (appointments, bookings, etc.)",
-        "Performance analytics and personalized reports",
-        "Health provider featured to all patients",
-        "Inclusion in the Platform's Recommended Services list",
-        "Access to 24/7 customer support"
-      ]
+    "freeServices": "Free Services",
+    "provider": {
+      "pageTitle": "Explore Our Plans",
+      "pageDescription": "Discover tailored solutions to optimize your services and grow your business.",
+      "business": {
+        "title": "HaiDoc Business",
+        "price": "FREE",
+        "features": [
+          "Free account",
+          "Monthly fund withdrawals after fee deductions",
+          "Access to business services on the platform",
+          "Basic scheduling management tools (appointments, bookings, etc.)"
+        ],
+        "cta": "Continue"
+      },
+      "businessPlus": {
+        "title": "HaiDoc Business Plus",
+        "featured": "FEATURED",
+        "price": "1,499",
+        "currency": "MZN",
+        "period": "Month",
+        "features": [
+          "All HaiDoc Business plan benefits +",
+          "Biweekly fund withdrawals after fee deductions",
+          "Customized scheduling management for your business (appointments, bookings, etc.)",
+          "Performance analytics and personalized reports",
+          "Highlighted provider visibility to all patients",
+          "Included in the platform’s Recommended Services list for patients",
+          "24/7 customer support access"
+        ],
+        "cta": "Continue"
+      },
+      "company": {
+        "title": "HaiDoc Company",
+        "featured": "FEATURED",
+        "price": "90",
+        "currency": "MZN",
+        "period": "Month",
+        "features": [
+          "All HaiDoc Business Plus plan benefits +",
+          "Weekly fund withdrawals after fee deductions",
+          "Simultaneous access to all services (Pharmacy, Laboratory, Clinic, and Healthcare Professional)",
+          "Consulting for operations and service optimization",
+          "Priority 24/7 support",
+          "Participation in networking events and personalized training"
+        ],
+        "cta": "Continue"
+      }
     },
-    "company": {
-      "title": "HaiDoc Company",
-      "price": "90",
-      "currency": "MZN",
-      "period": "Month",
-      "features": [
-        "All benefits of HaiDoc Business Plus +",
-        "Weekly fund withdrawals after fees",
-        "Simultaneous access to all services (Pharmacy, Lab, Clinic, and Health Professional)",
-        "Consulting for operational and service optimization",
-        "24/7 priority support",
-        "Participation in networking events and personalized training"
-      ]
+    "patient": {
+      "pageTitle": "Explore Our Plans",
+      "pageDescription": "Find personalized care to improve your health and well-being. Choose the perfect plan to support your health journey safely and efficiently.",
+      "individual": {
+        "title": "HaiDoc Individual",
+        "price": "FREE",
+        "features": [
+          "Free account",
+          "1 User",
+          "Access to all available services on the platform",
+          "Discounts on follow-up consultations",
+          "1 Free consultation for each active referred patient"
+        ],
+        "cta": "Continue"
+      },
+      "patient": {
+        "title": "HaiDoc Patient",
+        "price": "4,989",
+        "currency": "MZN",
+        "period": "Month",
+        "features": [
+          "1 User",
+          "All HaiDoc Individual plan benefits +",
+          "Priority in urgent consultations and quick chat",
+          "24/7 customer support access",
+          "Medication delivery in Maputo City",
+          "At-home sample collection in Maputo City",
+          "2 Quick Chat Consultations",
+          "1 Online Consultation per Month",
+          "1 At-Home Consultation per Month"
+        ],
+        "cta": "Subscribe"
+      },
+      "family": {
+        "title": "HaiDoc Family",
+        "price": "6,780",
+        "currency": "MZN",
+        "period": "Month",
+        "features": [
+          "2–6 Users (Affiliated users must be registered on the platform)",
+          "All HaiDoc Individual plan benefits +",
+          "Priority in urgent consultations and quick chat",
+          "24/7 customer support access"
+        ],
+        "cta": "Subscribe"
+      }
     }
   },
   "cta": {
-    "startNow": "Start now",
-    "createAccount": "Create an account",
-    "loginHero": "Login",
+    "startNow": "Start Now",
+    "createAccount": "Create an Account",
+    "loginHero": "Log In",
     "login": "Login",
-    "register": "Register",
+    "register": "Sign Up",
     "send": "Send",
     "next": "Next",
     "access": "Access",
@@ -110,30 +169,30 @@
     "pageTitle": "About HaiDoc",
     "pageDescription": "Learn more about our mission, vision, and the team behind HaiDoc.",
     "missionTitle": "Our Mission",
-    "missionDesc": "To make quality healthcare accessible and simple for everyone, everywhere.",
+    "missionDesc": "To make access to quality healthcare simple and available for everyone, everywhere.",
     "visionTitle": "Our Vision",
     "visionDesc": "To be the leading digital healthcare platform, connecting patients and professionals with trust and innovation.",
     "valuesTitle": "Our Values",
     "values": [
-      "Patient-centric care",
+      "Patient-centered care",
       "Innovation and technology",
       "Trust and transparency",
       "Accessibility for all",
       "Continuous improvement"
     ],
     "teamTitle": "Meet Our Team",
-    "teamDesc": "HaiDoc is built by a passionate team of healthcare professionals, technologists, and innovators dedicated to improving lives.",
-    "contactCta": "Want to get in touch? Visit our Contact page."
+    "teamDesc": "HaiDoc is built by a passionate team of healthcare professionals, technologists, and innovators committed to improving lives.",
+    "contactCta": "Want to talk to us? Visit our Contact page."
   },
   "contact": {
     "pageTitle": "Contact Us",
-    "pageDescription": "We'd love to hear from you! Reach out to us for support, feedback, or partnership opportunities.",
+    "pageDescription": "We’d love to hear from you! Reach out for support, feedback, or partnership opportunities.",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
       "message": "Your Message",
       "submit": "Send Message",
-      "success": "Thank you for reaching out! We'll get back to you soon.",
+      "success": "Thanks for reaching out! We’ll get back to you soon.",
       "error": "Something went wrong. Please try again."
     },
     "infoTitle": "Contact Information",
@@ -142,6 +201,6 @@
     "address": "Address",
     "emailValue": "info@hai-doc.com",
     "phoneValue": "+258 123 456 789",
-    "addressValue": "Rua do Dão, nº49, 2º Andar, Bairro Central, Cidade de Maputo, Moçambique"
+    "addressValue": "Rua do Dão, nº49, 2º Floor, Central District, Maputo City, Mozambique"
   }
 }
