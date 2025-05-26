@@ -14,7 +14,9 @@ export default function ContactPage() {
   const [status, setStatus] = useState<null | "success" | "error">(null)
 
   const encodedAddress = encodeURIComponent(config.address ?? "")
-  const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${config.googleMapsApiKey}&q=${encodedAddress}&zoom=15`
+  // const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${config.googleMapsApiKey}&q=${encodedAddress}&zoom=15`
+  // const mapSrc = `https://maps.google.com/maps?q=${encodedAddress}&t=&z=13&ie=UTF8&iwloc=&output=embed`
+  const mapSrc = `https://maps.google.com/maps?q=-25.9654720813029,32.58065968361568&t=&z=13&ie=UTF8&iwloc=&output=embed`
 
   return (
     <div className="flex flex-col gap-16 py-12">
@@ -27,7 +29,7 @@ export default function ContactPage() {
           className="flex flex-col gap-4 p-8 rounded-lg border shadow"
           onSubmit={(e) => {
             e.preventDefault()
-            setStatus("success") // Placeholder for now
+            setStatus("success")
           }}
         >
           <label className="text-left font-medium">
@@ -70,7 +72,7 @@ export default function ContactPage() {
             <h3 className="text-xl font-semibold mb-2">Our Location</h3>
             <div className="mb-4">
               <Link
-                href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
+                href={config.googlePublicUrl ?? ""}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-secondary hover:underline flex flex-row gap-2 items-start"
@@ -81,9 +83,9 @@ export default function ContactPage() {
                 {config.address}
               </Link>
             </div>
-            <div className="aspect-w-16 aspect-h-9">
+            <div className="aspect-w-16 aspect-h-9 rounded-sm overflow-hidden bg-system-2">
               <iframe
-                title="Google Map of our location"
+                title="Google Map of Haidoc Consultation Center"
                 src={mapSrc}
                 width="100%"
                 height="250"

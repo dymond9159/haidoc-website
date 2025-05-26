@@ -9,6 +9,7 @@ const config = {
   supportEmail: process.env.NEXT_PUBLIC_SUPPORT_EMAIL,
   phone: process.env.NEXT_PUBLIC_PHONE,
   address: process.env.NEXT_PUBLIC_ADDRESS,
+  googlePublicUrl: process.env.NEXT_PUBLIC_GOOGLE_PUBLIC_URL,
   googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
 }
 

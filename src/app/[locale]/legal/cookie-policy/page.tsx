@@ -173,7 +173,7 @@ export default function CookiePolicyPage() {
           </p>
           <p>
             <strong className="font-medium text-gray-800">Address:</strong>{" "}
-            <Link href={`https://maps.google.com/?q=${config.address}`} className="text-secondary hover:underline">
+            <Link href={config.googlePublicUrl ?? ""} className="text-secondary hover:underline">
               {config.address}
             </Link>
           </p>
