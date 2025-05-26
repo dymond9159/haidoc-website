@@ -12,6 +12,8 @@ const images = [
   "/images/slider/telemedicine_2.webp",
   "/images/slider/telemedicine_3.webp",
   "/images/slider/telemedicine_4.webp",
+  "/images/slider/telemedicine_5.webp",
+  "/images/slider/telemedicine_6.webp",
 ]
 
 export default function LandingPage() {
@@ -60,10 +62,10 @@ export default function LandingPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 -mt-15">
               <div className="flex flex-col justify-center space-y-12">
                 <div className="space-y-8">
-                  <h1 className="text-3xl text-white text-shadow-md font-bold sm:text-4xl md:text-5xl lg:text-6xl">
+                  <h1 className="text-3xl text-white text-shadow-lg font-bold sm:text-4xl md:text-5xl lg:text-6xl">
                     {t("home.heroTitle")}
                   </h1>
-                  <p className="max-w-[600px] text-white md:text-xl">{t("home.heroDescription")}</p>
+                  <p className="max-w-[600px] text-white text-shadow-md md:text-xl">{t("home.heroDescription")}</p>
                 </div>
                 <div className="flex flex-col gap-4 min-[400px]:flex-row">
                   <Link href={routes.register()}>

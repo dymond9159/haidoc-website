@@ -16,9 +16,9 @@ export default function PlansPage() {
 
   return (
     <div className="space-y-0">
-      <div className="w-full p-4">
+      <div className="w-full">
         <Tabs defaultValue={PlanCategory.Provider}>
-          <TabsList variant="rounded" className="mx-auto">
+          <TabsList variant="rounded" className="mx-auto mt-6">
             <TabsTrigger variant="rounded" value={PlanCategory.Provider}>
               {t("tabs.provider")}
             </TabsTrigger>
