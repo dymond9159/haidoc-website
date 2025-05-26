@@ -170,15 +170,15 @@ export default function PrivacyPolicyPage() {
           </p>
           <p>
             <strong className="font-medium text-gray-800">Phone:</strong>{" "}
-            <a href={`tel:${config.phone}`} className="text-secondary hover:underline">
+            <Link href={`tel:${config.phone}`} className="text-secondary hover:underline">
               {config.phone}
-            </a>
+            </Link>
           </p>
           <p>
             <strong className="font-medium text-gray-800">Address:</strong>{" "}
-            <a href={`https://maps.google.com/?q=${config.address}`} className="text-secondary hover:underline">
+            <Link href={`https://maps.google.com/?q=${config.address}`} className="text-secondary hover:underline">
               {config.address}
-            </a>
+            </Link>
           </p>
         </div>
       </TOSSection>

@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 import config from "@/config"
 import { MapPinIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
+import Link from "next/link"
 import { useState } from "react"
 
 export default function ContactPage() {
@@ -53,22 +54,22 @@ export default function ContactPage() {
             <div className="text-left space-y-2">
               <div>
                 <span className="font-medium">{t("email")}:</span>{" "}
-                <a href={`mailto:${config.supportEmail}`} className="text-secondary hover:underline">
+                <Link href={`mailto:${config.supportEmail}`} className="text-secondary hover:underline">
                   {config.supportEmail}
-                </a>
+                </Link>
               </div>
               <div>
                 <span className="font-medium">{t("phone")}:</span>{" "}
-                <a href={`tel:${config.phone}`} className="text-secondary hover:underline">
+                <Link href={`tel:${config.phone}`} className="text-secondary hover:underline">
                   {config.phone}
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="contact-map-container space-y-4">
             <h3 className="text-xl font-semibold mb-2">Our Location</h3>
             <div className="mb-4">
-              <a
+              <Link
                 href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,7 +79,7 @@ export default function ContactPage() {
                   <MapPinIcon className="w-4 h-4 flex-shrink-0" />
                 </div>
                 {config.address}
-              </a>
+              </Link>
             </div>
             <div className="aspect-w-16 aspect-h-9">
               <iframe
