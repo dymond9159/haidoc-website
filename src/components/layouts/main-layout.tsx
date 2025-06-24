@@ -12,7 +12,7 @@ export function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="flex flex-col h-screen bg-system-0">
       <Header />
-      <Suspense fallback={<Loading text="Carregando..." />}>
+      <Suspense fallback={<Loading />}>
         <main className="overflow-y-hidden">
           <ScrollArea className="h-full">
             {children}
